@@ -52,3 +52,11 @@ function deleteFilm(e){
         ui.displayMessages("Silme işlemi başarılı...","success");
     }
 }
+function clearAllFilms(){
+    if(confirm("Emin misiniz ?")){
+        ui.clearAllFilmsFromUI();
+        storage.clearAllFilmsFromStorage();
+    }
+    
+    
+}

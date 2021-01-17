@@ -55,3 +55,11 @@ UI.prototype.loadAllFilms=function (films){
 UI.prototype.deleteFilmFromUI=function(element){
 element.parentElement.parentElement.remove();
 }
+UI.prototype.clearAllFilmsFromUI =function(){
+
+  const filmList = document.getElementById("films");
+
+  while(filmList.firstElementChild !== null){
+    filmList.firstElementChild.remove();
+  }
+}
